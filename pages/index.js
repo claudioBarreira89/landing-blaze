@@ -12,6 +12,8 @@ import Cta from "../components/cta";
 import Faq from "../components/faq";
 import Container from "../components/container";
 import Framer from "../components/Framer";
+import devsImage from "../public/img/devs.png";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -55,7 +57,7 @@ const Home = () => {
         </Container>
       </div>
 
-      <div className="mt-32">
+      <div className="mt-32 relative">
         <Framer
           color="radial-gradient(50% 50% at 50% 50%, rgba(250, 117, 248, 0.28) 0%, rgba(250, 117, 248, 0) 100%)"
           left={600}
@@ -70,7 +72,7 @@ const Home = () => {
               </>
             ),
             desc: (
-              <div className="text-4xl">
+              <div className="text-3xl lg:text-4xl">
                 <p className="mb-8">
                   Use{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-red-600">
@@ -104,6 +106,27 @@ const Home = () => {
         </div>
       </SectionTitle>
       <Testimonials />
+
+      <SectionTitle>
+        <div className="text-3xl pt-16">
+          <span className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-400">
+            The Devs
+          </span>
+        </div>
+      </SectionTitle>
+      <div
+        className={`flex items-center justify-center w-full lg:w-1/2 m-auto`}
+      >
+        <div>
+          <Image
+            src={devsImage}
+            width="600"
+            height="auto"
+            className={"object-cover"}
+            placeholder="blur"
+          />
+        </div>
+      </div>
 
       <Footer />
     </>

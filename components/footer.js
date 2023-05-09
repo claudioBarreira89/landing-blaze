@@ -10,7 +10,7 @@ export default function Footer() {
     <div className="relative">
       <Container>
         <div className="flex justify-center max-w-screen-xl pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700">
-          <div className="">
+          <div>
             <div>Join the movement</div>
             <div className="flex justify-center mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
