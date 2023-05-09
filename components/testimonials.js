@@ -9,25 +9,69 @@ import userThreeImg from "../public/img/user3.jpg";
 const Testimonials = () => {
   return (
     <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-2">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal "></p>
+            <span className="text-4xl text-center pb-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-300">
+              1. STARTUP
+            </span>
+            <p className="text-2xl leading-normal text-center">
+              Launch $BLAZE 1,000+ Holders <br />
+              CoinGecko + Coin Marketcap Listings
+              <br />
+              Partnerships
+              <br />
+              Ship BLAZE V1
+            </p>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal "></p>
+            <span className="text-4xl text-center pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-700">
+              2. SCALE UP
+            </span>
+            <p className="text-2xl leading-normal text-center">
+              Launch BLAZE AI
+              <br />
+              Integrate fiat on-ramps
+              <br />
+              5,000+ Holders
+              <br />
+              CEX Listing
+              <br />
+              L2 Partnerships
+            </p>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal "></p>
+            <span className="text-4xl text-center pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-red-400">
+              3. SCALE UP MORE
+            </span>
+            <p className="text-2xl leading-normal text-center">
+              Launch BLAZE STORE
+              <br />
+              Integrate bridges
+              <br />
+              50,000+ Holders
+              <br />
+              Partnerships
+            </p>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal "></p>
+            <span className="text-4xl text-center pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-800">
+              4. CONQUER THE WORLD
+            </span>
+            <p className="text-2xl leading-normal text-center">
+              Launch BLAZE OS
+              <br />
+              1m+ Holders
+              <br />
+              Blaze party with every mfer <br />
+              that believed in us
+            </p>
           </div>
         </div>
       </div>

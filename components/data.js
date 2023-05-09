@@ -11,8 +11,19 @@ import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "",
-  desc: "Access split second data as it enters the blockchain to make data driven trading decisions",
+  title: (
+    <>
+      Access{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400">
+        split second data
+      </span>{" "}
+      as it enters the blockchain to make data driven{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
+        trading decisions
+      </span>
+    </>
+  ),
+  // desc: "Access split second data as it enters the blockchain to make data driven trading decisions",
   image: benefitOneImg,
   bullets: [
     // {
@@ -34,8 +45,19 @@ const benefitOne = {
 };
 
 const benefitTwo = {
-  title: "",
-  desc: "Use AI to discover the blockchain like never before",
+  title: (
+    <>
+      Use{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400">
+        AI
+      </span>{" "}
+      to discover the blockchain like{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
+        never before
+      </span>
+    </>
+  ),
+  desc: "",
   image: benefitTwoImg,
   bullets: [
     // {

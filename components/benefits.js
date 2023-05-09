@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+import Framer from "./Framer";
 
 const Benefits = (props) => {
   const { data } = props;
@@ -32,7 +33,7 @@ const Benefits = (props) => {
         >
           <div>
             <div className="flex flex-col w-full mt-4">
-              <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+              <h3 className="max-w-lg mt-3 text-4xl leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-5xl dark:text-white">
                 {data.title}
               </h3>
 
