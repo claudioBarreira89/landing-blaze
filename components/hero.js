@@ -1,40 +1,47 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
+import Framer from "./Framer";
+import appImage from "../public/img/Dashboard.webp";
 
 const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap p-32">
-        <div className="flex items-center w-full lg:w-1/2 max-w-xl">
-          <div className="mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              The unbelievebly fast crypto{" "}
-              <span className="text-purple-500">SUPERAPP</span>
-            </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Take control of your trading experience and make the impossible
-              possible. Trade easier and achieve your goals faster.
-            </p>
+      <div className="overflow-hidden relative">
+        <Container className="flex flex-wrap justify-center pt-32 pb-64 overflow-hidden relative">
+          <div className="flex items-center w-full text-center lg:w-2/3 max-w-4xl mb-64">
+            <div className="mb-8">
+              <h1 className="text-6xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight xl:text-7xl xl:leading-tight dark:text-white">
+                The Unbelievebly Fast Crypto{" "}
+                <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
+                  SUPERAPP
+                </span>
+              </h1>
+              <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 max-w-xl m-auto">
+                It's time to stop getting sandwiched and rekt with slippage.
+                Take control of your trading experience and turbo charge your
+                growth.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
+
+          <div className="absolute -z-10 radius-100 -bottom-60 rounded-lg overflow-hidden border-4 border-gray-600 shadow shadow-gray-900/50">
             <Image
-              src={heroImg}
-              width="616"
-              height="617"
+              src={appImage}
+              width="900"
+              height="auto"
+              alt="Benefits"
               className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
               placeholder="blur"
             />
           </div>
-        </div>
-      </Container>
-      <Container>
+        </Container>
+        <Framer left={-851} top={0} />
+      </div>
+
+      <Container className="py-16">
         <div className="flex flex-col justify-center">
-          <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
+          <div className="flex flex-wrap justify-center gap-5 md:justify-around">
             <div className="pt-2 text-gray-400 dark:text-gray-400">
               <AmazonLogo />
             </div>
