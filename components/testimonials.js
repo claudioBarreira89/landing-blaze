@@ -71,8 +71,7 @@ const Testimonials = () => {
               <br />
               1m+ Holders
               <br />
-              Blaze party with every mfer <br />
-              that believed in us
+              Blaze party with every mfer that believed in us
             </p>
           </div>
         </div>
