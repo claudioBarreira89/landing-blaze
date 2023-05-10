@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Container from "./container";
 import Framer from "./Framer";
+import Animate from "./Animate";
 
 const Benefits = (props) => {
   const { data } = props;
@@ -37,9 +38,9 @@ const Benefits = (props) => {
                 {data.title}
               </h3>
 
-              <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300 max-w-md">
+              <div className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300 max-w-md">
                 {data.desc}
-              </p>
+              </div>
             </div>
 
             <div className="w-full mt-5">
@@ -69,9 +70,9 @@ function Benefit(props) {
           <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
             {props.title}
           </h4>
-          <p className="mt-1 text-gray-500 dark:text-gray-400">
+          <div className="mt-1 text-gray-500 dark:text-gray-400">
             {props.children}
-          </p>
+          </div>
         </div>
       </div>
     </>

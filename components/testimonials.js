@@ -9,14 +9,16 @@ import userThreeImg from "../public/img/user3.jpg";
 const Testimonials = () => {
   return (
     <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-2">
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <span className="text-4xl text-center pb-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-300">
+      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-4">
+        <div className="">
+          <div className="flex flex-col w-full h-full bg-gray-100 p-10 rounded-2xl dark:bg-trueGray-800">
+            <span className="text-3xl pb-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-300">
               1. STARTUP
             </span>
-            <p className="text-2xl leading-normal text-center">
-              Launch $BLAZE 1,000+ Holders <br />
+            <p className="text-2xl leading-normal">
+              Launch $BLAZE
+              <br />
+              1,000+ Holders <br />
               CoinGecko + Coin Marketcap Listings
               <br />
               Partnerships
@@ -26,11 +28,11 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <span className="text-4xl text-center pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-700">
+          <div className="flex flex-col w-full h-full bg-gray-100 p-10 rounded-2xl dark:bg-trueGray-800">
+            <span className="text-3xl pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-700">
               2. SCALE UP
             </span>
-            <p className="text-2xl leading-normal text-center">
+            <p className="text-2xl leading-normal">
               Launch BLAZE AI
               <br />
               Integrate fiat on-ramps
@@ -44,11 +46,11 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <span className="text-4xl text-center pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-red-400">
+          <div className="flex flex-col w-full h-full bg-gray-100 p-10 rounded-2xl dark:bg-trueGray-800">
+            <span className="text-3xl pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-red-400">
               3. SCALE UP MORE
             </span>
-            <p className="text-2xl leading-normal text-center">
+            <p className="text-2xl leading-normal">
               Launch BLAZE STORE
               <br />
               Integrate bridges
@@ -60,11 +62,11 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <span className="text-4xl text-center pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-800">
+          <div className="flex flex-col w-full h-full bg-gray-100 p-10 rounded-2xl  dark:bg-trueGray-800">
+            <span className="text-3xl pb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-800">
               4. CONQUER THE WORLD
             </span>
-            <p className="text-2xl leading-normal text-center">
+            <p className="text-2xl leading-normal">
               Launch BLAZE OS
               <br />
               1m+ Holders

@@ -1,0 +1,35 @@
+.wrapper {
+  max-width: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 6.81%,
+    rgb(0, 0, 0) 92.08%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.parallax {
+  overflow: hidden;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.scroller {
+  font-size: 40px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+}

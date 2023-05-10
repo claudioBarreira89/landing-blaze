@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Container from "./container";
-import heroImg from "../public/img/hero.png";
+import { motion } from "framer-motion";
 import Framer from "./Framer";
 import appImage from "../public/img/Dashboard.webp";
+import Animate from "./Animate";
 
 const Hero = () => {
   return (
@@ -11,28 +12,43 @@ const Hero = () => {
         <Container className="flex flex-wrap justify-center pt-32 pb-64 overflow-hidden relative">
           <div className="flex items-center w-full text-center lg:w-2/3 max-w-4xl mb-64">
             <div className="mb-8">
-              <h1 className="text-5xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight xl:text-7xl xl:leading-tight dark:text-white">
-                The Unbelievebly Fast Crypto{" "}
-                <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
-                  SUPERAPP
-                </span>
-              </h1>
-              <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 max-w-xl m-auto">
-                It's time to stop getting sandwiched and rekt with slippage.
-                Take control of your trading experience and turbo charge your
-                growth.
-              </p>
+              <Animate
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ motion: "easeIn", duration: 1 }}
+              >
+                <h1 className="text-5xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight xl:text-7xl xl:leading-tight dark:text-white">
+                  The Unbelievebly Fast Crypto{" "}
+                  <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
+                    SUPERAPP
+                  </span>
+                </h1>
+
+                <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 max-w-xl m-auto">
+                  It's time to stop getting sandwiched and rekt with slippage.
+                  Take control of your trading experience and turbo charge your
+                  growth.
+                </p>
+              </Animate>
             </div>
           </div>
 
-          <div className="m-8 absolute -z-10 radius-100 bottom-40 lg:-bottom-60 rounded-lg overflow-hidden border-4 border-gray-600 shadow shadow-gray-900/50">
-            <Image
-              src={appImage}
-              width="900"
-              height="auto"
-              className={"object-cover"}
-              placeholder="blur"
-            />
+          <div className="m-8 absolute -z-10  bottom-40 lg:-bottom-60 ">
+            <Animate
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ motion: "easeIn", duration: 1 }}
+            >
+              <div className="radius-100 rounded-lg overflow-hidden border-4 border-gray-600 shadow shadow-gray-900/50">
+                <Image
+                  src={appImage}
+                  width="900"
+                  height="auto"
+                  className={"object-cover"}
+                  placeholder="blur"
+                />
+              </div>
+            </Animate>
           </div>
         </Container>
         <Framer left={-851} top={0} />
