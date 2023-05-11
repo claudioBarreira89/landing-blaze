@@ -17,7 +17,7 @@ const benefitOne = {
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400">
         split second data
       </span>{" "}
-      as it enters the blockchain to make data driven{" "}
+      to make faster{" "}
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
         trading decisions
       </span>

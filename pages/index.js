@@ -68,15 +68,15 @@ const Home = () => {
       <ParallaxText baseVelocity={-1}>
         <div className="flex">
           {[
-            "Recruiting",
-            "Security",
-            "Strategy",
-            "Product",
-            "People",
-            "Design",
-            "Sales",
-            "Finance",
-            "Customer Support",
+            "Wallet Tracking",
+            "Analytics",
+            "Swaps",
+            "Bridging",
+            "AI",
+            "Smart Gas",
+            "Launch Sniping",
+            "Non-Custodial",
+            "Address Book",
           ].map((w) => (
             <div
               className={`bg-gradient-to-r p-4 mx-1 mb-2 rounded-lg ${
@@ -91,13 +91,13 @@ const Home = () => {
       <ParallaxText baseVelocity={1}>
         <div className="flex">
           {[
-            "Business Development",
-            "Analytics",
-            "Engineering",
-            "Operations",
-            "Marketing",
-            "Leadership",
-            "Events",
+            "Spending Limits",
+            "Secure",
+            "DApp Connections",
+            "1-Click Transactions",
+            "Portfolio Overview",
+            "Account Abstraction",
+            "Auto Buys / Sells",
           ].map((w) => (
             <div
               className={`bg-gradient-to-r p-4 mx-1 rounded-lg ${
