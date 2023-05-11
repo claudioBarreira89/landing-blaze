@@ -13,6 +13,23 @@ import benefitTwoImg from "../public/img/benefit-two.png";
 const benefitOne = {
   title: (
     <>
+      Get the{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400">
+        fastest trades
+      </span>{" "}
+      at the{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
+        best prices
+      </span>
+    </>
+  ),
+  image: benefitOneImg,
+  bullets: [],
+};
+
+const benefitTwo = {
+  title: (
+    <>
       Access{" "}
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400">
         split second data
@@ -20,40 +37,6 @@ const benefitOne = {
       to make faster{" "}
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
         trading decisions
-      </span>
-    </>
-  ),
-  // desc: "Access split second data as it enters the blockchain to make data driven trading decisions",
-  image: benefitOneImg,
-  bullets: [
-    // {
-    //   title: "Understand your customers",
-    //   desc: "Then explain the first point breifly in one or two lines.",
-    //   icon: <FaceSmileIcon />,
-    // },
-    // {
-    //   title: "Improve acquisition",
-    //   desc: "Here you can add the next benefit point.",
-    //   icon: <ChartBarSquareIcon />,
-    // },
-    // {
-    //   title: "Drive customer retention",
-    //   desc: "This will be your last bullet point in this section.",
-    //   icon: <CursorArrowRaysIcon />,
-    // },
-  ],
-};
-
-const benefitTwo = {
-  title: (
-    <>
-      Use{" "}
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400">
-        AI
-      </span>{" "}
-      to discover the blockchain like{" "}
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
-        never before
       </span>
     </>
   ),
@@ -78,4 +61,38 @@ const benefitTwo = {
   ],
 };
 
-export { benefitOne, benefitTwo };
+const benefitThree = {
+  title: (
+    <>
+      Use{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-400">
+        AI
+      </span>{" "}
+      to discover the blockchain like{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
+        never before
+      </span>
+    </>
+  ),
+  // desc: "Access split second data as it enters the blockchain to make data driven trading decisions",
+  image: benefitOneImg,
+  bullets: [
+    // {
+    //   title: "Understand your customers",
+    //   desc: "Then explain the first point breifly in one or two lines.",
+    //   icon: <FaceSmileIcon />,
+    // },
+    // {
+    //   title: "Improve acquisition",
+    //   desc: "Here you can add the next benefit point.",
+    //   icon: <ChartBarSquareIcon />,
+    // },
+    // {
+    //   title: "Drive customer retention",
+    //   desc: "This will be your last bullet point in this section.",
+    //   icon: <CursorArrowRaysIcon />,
+    // },
+  ],
+};
+
+export { benefitOne, benefitTwo, benefitThree };

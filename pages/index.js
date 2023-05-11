@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
-import { benefitOne, benefitTwo } from "../components/data";
+import { benefitOne, benefitThree, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
@@ -58,12 +58,6 @@ const Home = () => {
           The only DApp you'll ever need.
         </div>
       </SectionTitle>
-      <div className="relative">
-        <Framer color="radial-gradient(50% 50% at 50% 50%, rgba(250, 117, 248, 0.28) 0%, rgba(250, 117, 248, 0) 100%)" />
-        <Benefits data={benefitOne} />
-        <Benefits imgPos="right" data={benefitTwo} />
-        <Framer top={700} left={-1000} />
-      </div>
 
       <ParallaxText baseVelocity={-1}>
         <div className="flex">
@@ -110,12 +104,36 @@ const Home = () => {
         </div>
       </ParallaxText>
 
+      <div className="relative mt-32">
+        <Framer color="radial-gradient(50% 50% at 50% 50%, rgba(250, 117, 248, 0.28) 0%, rgba(250, 117, 248, 0) 100%)" />
+        <Benefits data={benefitOne} />
+        <Benefits imgPos="right" data={benefitTwo} />
+        <Benefits data={benefitThree} />
+        <Framer top={700} left={-1000} />
+      </div>
+
+      <div className="bg-gray-950 mt-32">
+        <Container className="flex items-center w-full text-center lg:w-1/2 py-32">
+          <h3 className="text-5xl m-auto tracking-tight text-gray-800 lg:leading-tight lg:text-5xl dark:text-white">
+            For the{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-purple-500">
+              community,{" "}
+            </span>
+            by the{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-orange-600">
+              community
+            </span>
+          </h3>
+        </Container>
+      </div>
+
       <div className="mt-32 relative">
         <Framer
           color="radial-gradient(50% 50% at 50% 50%, rgba(250, 117, 248, 0.28) 0%, rgba(250, 117, 248, 0) 100%)"
           left={600}
         />
         <Benefits
+          imgPos="right"
           data={{
             ...benefitOne,
             title: (
@@ -134,7 +152,7 @@ const Home = () => {
                   to unlock pro features.
                 </p>
                 <p className="mb-8">
-                  1% burn + sell tax that goes{" "}
+                  2% burn + sell tax that goes{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-pink-600">
                     straight to development.
                   </span>
